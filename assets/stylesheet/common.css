@@ -1,0 +1,112 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=vietnamese');
+
+* {
+    box-sizing: border-box;
+}
+
+*:after {
+    box-sizing: border-box;
+}
+
+*:before {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: #363f45;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.sidebar {
+    background: #0747a6;
+    color: #efefef;
+    display: block;
+    float: left;
+    height: 100vh;
+    padding: 30px 10px;
+    width: 300px;
+}
+
+.sidebar h2 {
+    display: block;
+    line-height: 50px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sidebar h4 {
+    display: block;
+    font-weight: 400;
+    margin: 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.sidebar .title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0px 0px;
+}
+
+.sidebar .title.skills {
+    // text-align: center;
+}
+
+.sidebar .translate {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.sidebar .informations {
+    display: block;
+    font-size: 14px;
+    text-indent: 5px;
+}
+
+.sidebar .type {
+    font-weight: 600;
+}
+
+.sidebar .type ~ .informations:not(.type) {
+    text-indent: 25px;
+}
+
+.content {
+    display: block;
+    float: right;
+    height: 100vh;
+    overflow: hidden;
+    width: calc(100% - 300px);
+}
