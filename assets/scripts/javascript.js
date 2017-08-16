@@ -7,4 +7,9 @@
     });
 }(function themeFactory($) {
     "use strict";
+
+    $(function() {
+        $(document.body).show();
+    });
+
 }));

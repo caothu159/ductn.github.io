@@ -29,7 +29,7 @@ html {
 body {
     background: #222222;
     color: #efefef;
-    display: block;
+    display: none;
     font-family: 'Open Sans', sans-serif;
     height: auto;
     margin: 0px;
