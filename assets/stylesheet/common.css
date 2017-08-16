@@ -1,17 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=vietnamese');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
 @-ms-viewport {
     width: device-width;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=vietnamese');
-
-* {
-    box-sizing: border-box;
-}
-
-*:after {
-    box-sizing: border-box;
-}
-
+*,
+*:after,
 *:before {
     box-sizing: border-box;
 }
@@ -32,7 +27,8 @@ html {
 }
 
 body {
-    color: #363f45;
+    background: #222222;
+    color: #efefef;
     display: block;
     font-family: 'Open Sans', sans-serif;
     height: auto;
@@ -47,16 +43,18 @@ body {
 }
 
 .sidebar {
-    background: #0747a6;
-    color: #efefef;
+    background: rgba(7, 71, 166, 0.3);
+    border-radius: 25px;
     display: block;
     float: left;
-    height: 100vh;
-    padding: 30px 10px;
+    height: calc(100vh - 40px);
+    margin: 20px 30px 20px 20px;
+    padding: 30px 10px 0px;
     width: 300px;
 }
 
-.sidebar h2 {
+.sidebar h1 {
+    color: rgba(60, 192, 196, 1);
     display: block;
     line-height: 50px;
     margin: 0px;
@@ -73,14 +71,11 @@ body {
 }
 
 .sidebar .title {
+    color: rgba(60, 192, 196, 1);
     display: block;
     font-size: 16px;
     font-weight: 600;
-    margin: 20px 0px 0px;
-}
-
-.sidebar .title.skills {
-    // text-align: center;
+    margin: 20px 0px 10px;
 }
 
 .sidebar .translate {
@@ -108,5 +103,68 @@ body {
     float: right;
     height: 100vh;
     overflow: hidden;
-    width: calc(100% - 300px);
+    padding: 10px;
+    width: calc(100% - 350px);
+}
+
+.content h2 {
+    color: rgba(60, 192, 196, 1);
+    display: block;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.content h2 span + span:before {
+    content: '/ ';
+}
+
+.content h5 {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.content h5 span + span:before {
+    content: '/ ';
+}
+
+.article {
+    display: block;
+}
+
+.article .time {
+    color: rgba(60, 192, 196, 1);
+    display: block;
+    float: left;
+    position: relative;
+    text-align: right;
+    width: 120px;
+}
+
+.article .time-icon {
+    color: rgba(7, 71, 166, 1);
+    display: block;
+    font-size: 25px;
+    left: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%) rotate(-90deg);
+}
+
+.article .com {
+    display: none;
+}
+
+.article .job {
+    display: none;
+}
+
+.article .experience {
+    display: none;
 }
