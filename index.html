@@ -1,247 +1,258 @@
 <!DOCTYPE html>
 <html lang="vi-VN">
-	<head>
-		<meta charset="utf-8" />
-		<title>CV - Trần Kim Thành</title>
-		<meta name="Author" content="Trần Kim Thành" />
-		<meta name="Description" content="CV - Trần Kim Thành" />
-		<style type="text/css">
-			body{overflow-x: hidden;}
-			#wrapper{font-family: Tahoma; width: 905px; margin: auto;}
-			h3.title{padding: 8px 10px;background-color: #008A45;color: #FFF;font-size: 18px;cursor: pointer;}
-			tr.border td{border: 1px dashed #008A45;}
-			p.title{font-weight: bold;color: #F00;}
-			td.no-right{border-right: 0 !important;}
-			td.no-left{border-left: 0 !important;}
-			ul{margin: 0 20px; padding: 0;}
-			li{margin: 5px 0;}
-			a{color: #00F;text-decoration: none;margin: 0 0 5px 0;display: inline-block;}
-			a:hover{color: #F00;text-decoration: underline;}
-		</style>
-		<link rel="stylesheet" type="text/css" href="assets/animate.css" />
-		<script type="text/javascript" src="assets/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$("div.content").hide();
-				$("h3.title:first").next().removeClass().slideDown().addClass("bounceInDown animated");
-				$("h3.title").on("click", function(){
-					var _self = $(this);
-					if(_self.next().css("display") == "none"){
-						$.when(
-							$("h3.title").next().removeClass().slideUp().addClass("bounceOutUp animated")
-						).done(function(){
-							_self.next().removeClass().slideDown().addClass("bounceInDown animated");
-						});
-					}
-				});
-			});
-		</script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<h3 class="title">Thông tin cá nhân</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr>
-						<td width="200">Họ &amp; Tên</td>
-						<td><b>Trần Kim Thành</b></td>
-						<td rowspan="8">
-							<img width="120" alt="Trần Kim Thành" title="Trần Kim Thành" src="assets/avatar.jpg" />
-						</td>
-					</tr>
-					<tr>
-						<td>Giới tính</td>
-						<td>Nam</td>
-					</tr>
-					<tr>
-						<td>Ngày sinh</td>
-						<td>13/10/1990</td>
-					</tr>
-					<tr>
-						<td>Quốc tịch</td>
-						<td>Việt Nam</td>
-					</tr>
-					<tr>
-						<td>Tình trạng hôn nhân</td>
-						<td>Độc thân</td>
-					</tr>
-					<tr>
-						<td>Địa chỉ</td>
-						<td>Lĩnh Nam ,Hoàng Mai, Hà Nội</td>
-					</tr>
-					<tr>
-						<td>Điện thoại</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Email</td>
-						<td><b>hojcham3@gmail.com</b></td>
-					</tr>
-				</table>
-			</div><!--Kết thúc thông tin cá nhân-->
-			<h3 class="title">Quan điểm & nguyện vọng nghề nghiệp</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr>
-						<td colspan="2">
-							Học hỏi và tiếp cận các công nghệ mới!<br>
-							Rất mong muốn được làm việc trong một môi trường hiện đại, chuyên nghiệp, cạnh tranh lành mạnh và có cơ hội thăng tiến.
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2"><b>Công việc mong muốn</b></td>
-					</tr>
-					<tr>
-						<td width="200">Vị trí / Chức danh</td>
-						<td><p class="title">Lập trình viên</p></td>
-					</tr>
-					<tr>
-						<td>Cấp bậc</td>
-						<td>Nhân viên</td>
-					</tr>
-					<tr>
-						<td>Mức lương</td>
-						<td>Thỏa thuận</td>
-					</tr>
-					<tr>
-						<td>Hình thức làm việc</td>
-						<td>Nhân viên chính thức</td>
-					</tr>
-					<tr>
-						<td>Nơi làm việc</td>
-						<td>Hà Nội</td>
-					</tr>
-				</table>
-			</div><!--Kết thúc Mục tiêu nghề nghiệp-->
-			<h3 class="title">Kinh nghiệm làm việc</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr>
-						<td width="200">Số năm kinh nghiệm</td>
-						<td>02 năm</td>
-					</tr>
-					<tr>
-						<td colspan="2"><b>Công ty đã từng làm việc</b></td>
-					</tr>
-					<tr class="border">
-						<td class="no-right">11/2014 - 7/2017</td>
-						<td class="no-left">
-							<p class="title">Công ty Global Smart Solutions</p>
-							<p>
-								- Nhân Viên<br />
-								- Xây dựng website bằng wordpress.<br />
-								- tìm hiểu và tham gia các dự án oursource như angular và ruby on rails!<br />
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div><!--Kết thúc Kinh nghiệm công việc-->
-			<h3 class="title">Trình độ học vấn và Quá trình học tập</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr>
-						<td width="200">Ngôn ngữ</td>
-						<td>Tiếng Anh (sơ cấp)</td>
-					</tr>
-					<tr>
-						<td colspan="2"><b>Quá trình học tập</b></td>
-					</tr>
-					<tr class="border">
-						<td class="no-right">
-							Tốt nghiệp<br />
-							12/2014
-						</td>
-						<td class="no-left">
-							<p class="title">Kinh Doanh Và Công nghệ Hà Nội</p>
-						</td>
-					</tr>
-				</table>
-			</div><!--Kết thúc trình độ học vấn-->
-			<h3 class="title">Kỹ năng chuyên môn</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr>
-						<td>
-							<ul>
-								<li>Lập kế hoạch</li>
-								<li>Giải quyết vấn đề</li>
-								<li>Làm việc nhóm</li>
-								<li>Làm việc độc lập</li>
-								<li>Quản lý thời gian</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div><!--Kết thúc kỹ năng chuyên môn-->
-			<h3 class="title">Thành tích nổi bật</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr>
-						<td colspan="2">
-							+ Có kinh nghiệm về Hosting, Domain
-							<br>+ Làm việc trên hệ điều hành window, linux, ubuntu
-							<br>+ Làm việc theo nhóm sử dụng GIT
-			                <br>+ Có kinh nghiệm lập trình web với các ngôn ngữ: HTML5, CSS3, JS, JQUERY, PHP, MYSQL
-			                <br>+ Hiểu biết về mô hình MVC và lập trình hướng đối tượng OOP.
-			                <br>+ Có thể sử dụng các CSS framework: Bootstrap, Foundation.
-			                <br>+ Có thể sử dụng các PHP framework: CakePHP, Laravel, CodeIgniter...
-			                <br>...
-						</td>
-					</tr>
-					<tr>
-						<td>
-							- Các website đã làm:
-							<ul>
-								<li>
-									<a href="viewmychain.com/home/" target="_blank">viewmychain.com/home/</a> (Source riêng của công ty)
-								</li>
-								<li>
-									<a href="https://www.twentyci.co.uk" target="_blank">https://www.twentyci.co.uk</a> (Source riêng của công ty)
-								</li>
-								<li>
-									<a href="https://www.twentyea.co.uk" target="_blank">https://www.twentyea.co.uk</a> (Source riêng của công ty)
-								</li>
-								<li>
-									<a href="https://raymawjee.com" target="_blank">https://raymawjee.com</a> (Source riêng của công ty)
-								</li>
-								<li>
-									<a href="https://circuit-vietnam.fr/quan/" target="_blank">https://circuit-vietnam.fr/quan/</a> (Source riêng của công ty)
-								</li>
-								<li>
-									<a href="http://www.krausser-druckluft.de/" target="_blank">http://www.krausser-druckluft.de/</a> (Source riêng của công ty)
-								</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div><!--Kết thúc thành tích nổi bật-->
-			<h3 class="title">Người tham khảo</h3>
-			<div class="content">
-				<table width="100%" border="0" cellpadding="5">
-					<tr class="border">
-						<td class="no-right" width="400">
-							Trần Ngọc Đức<br />
-						</td>
-						<td class="no-left">
-							<p class="title">Global Smart Solutions</p>
-							<p>
-								Nhân viên
-							</p>
-						</td>
-					</tr>
-					<tr class="border">
-						<td class="no-right" width="400">
-							Nguyễn Minh Hồng<br />
-						</td>
-						<td class="no-left">
-							<p class="title">Framgia</p>
-							<p>
-								Nhân viên
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div><!--Kết thúc người tham khảo-->
-		</div><!--Kết thúc #wrapper-->
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>CV - Tran Ngoc Duc</title>
+    <meta name="Author" content="Tran Ngoc Duc" />
+    <meta name="Description" content="CV - Tran Ngoc Duc" />
+    <link rel="stylesheet" type="text/css" href="assets/animate.css" />
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("div.content").hide();
+        $("h3.title:first").next().removeClass().slideDown().addClass("bounceInDown animated");
+        $("h3.title").on("click", function() {
+            var _self = $(this);
+            if (_self.next().css("display") == "none") {
+                $.when(
+                    $("h3.title").next().removeClass().slideUp().addClass("bounceOutUp animated")
+                ).done(function() {
+                    _self.next().removeClass().slideDown().addClass("bounceInDown animated");
+                });
+            }
+        });
+    });
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Trần Ngọc Đức</h2>
+            <h4>PHP developer</h4>
+            <div class="sidebar-wrapper">
+                <div class="title">
+                    <span>Thông tin liên hệ</span>
+                    <span class="translate">Contact Info</span>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Nam</span>
+                        <span class="translate">male</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>0166.3089.565</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>caothu91@gmail.com</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>139 Tam Trinh - Hai Bà Trưng - Hà Nội</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>Định hướng nghề nghiệp</span>
+                    <span class="translate">Career goals</span>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Tiếp cận công nghệ mới, trau dồi kĩ năng</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Mở rộng quan hệ</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Đi nhiều, biết nhiều, tăng hiểu biết</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Ngoại ngữ</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Kiếm tiền bám trụ Thủ đô</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>Kĩ năng Skills</span>
+                    <span class="translate">Career goals</span>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>PHP</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Magento 1x, 2x</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>WordPress</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Joomla</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Drupal</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Laravel</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Joomla</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>vBulletin</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Javascript</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>ES6</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Angular 1,2</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>jQuery</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>jQuery UI</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Requirejs</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Nodejs</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>StyleSheet</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>CSS3</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Less</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Sass</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>fw Bootstrap</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Linux server management</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Ubuntu</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <div class="information">
+                        <span>Centos</span>
+                        <span class="translate"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Học vấn</h2>
+            <h4>Education</h4>
+            <div class="content-wrapper">
+                <article>
+                    <div class="time"></div>
+                    <div class="com"></div>
+                    <div class="job"></div>
+                    <div class="experience"></div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
