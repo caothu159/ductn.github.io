@@ -1,0 +1,31 @@
+{
+    "PHP": [
+        "Magento 1x, 2x",
+        "WordPress",
+        "Joomla",
+        "Drupal",
+        "Laravel",
+        "vBulletin"
+    ],
+
+    "Javascript": [
+        "ES6",
+        "Angular 1,2",
+        "jQuery",
+        "jQuery UI",
+        "Requirejs",
+        "Nodejs",
+        "StyleSheet"
+    ],
+
+    "StyleSheet": [
+        "CSS3",
+        "Less",
+        "Sass",
+        "fw Bootstrap"
+    ],
+    "Linux server management": [
+        "Ubuntu",
+        "Centos"
+    ]
+}

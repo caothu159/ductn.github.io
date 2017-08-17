@@ -86,144 +86,24 @@
                     <span>Kĩ năng</span>
                     <span class="translate">Skills</span>
                 </div>
+                <!-- ko foreach: skills -->
+                <!-- ko if: type -->
                 <div class="informations type">
                     <div class="information">
-                        <span>PHP</span>
+                        <!-- ko text: skill --><!-- /ko -->
                         <span class="translate"></span>
                     </div>
                 </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>Magento 1x, 2x</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>WordPress</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
+                <!--/ko-->
+                <!-- ko ifnot: type -->
                 <div class="informations">
                     <div class="information">
-                        <span>Joomla</span>
+                        <!-- ko text: skill --><!-- /ko -->
                         <span class="translate"></span>
                     </div>
                 </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>Drupal</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>Laravel</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>Joomla</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>vBulletin</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations type">
-                    <div class="information">
-                        <span>Javascript</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>ES6</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>Angular 1,2</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>jQuery</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>jQuery UI</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>Requirejs</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>Nodejs</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations type">
-                    <div class="information">
-                        <span>StyleSheet</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>CSS3</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>Less</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>Sass</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>fw Bootstrap</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations type">
-                    <div class="information">
-                        <span>Linux server management</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations strong">
-                    <div class="information">
-                        <span>Ubuntu</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <div class="informations">
-                    <div class="information">
-                        <span>Centos</span>
-                        <span class="translate"></span>
-                    </div>
-                </div>
+                <!--/ko-->
+                <!--/ko-->
             </div>
         </div>
         <div class="content">
@@ -235,7 +115,7 @@
                 <span>Education</span>
                 <span>Experience</span>
             </h5>
-            <div id="experiences" class="content-wrapper experiences">
+            <div class="content-wrapper experiences">
                 <script id="article" type="text/html">
                     <article class="article clearfix">
                         <div class="time">
@@ -244,7 +124,7 @@
                         </div>
                     </article>
                 </script>
-                <!-- ko foreach: getExperiences() -->
+                <!-- ko foreach: experiences -->
                 <article class="article clearfix">
                     <div class="time">
                         <i class="time-icon ion-ios-location"></i>
@@ -253,9 +133,6 @@
                     <div class="com" data-bind="text: com"></div>
                     <div class="job" data-bind="text: job"></div>
                     <div class="experience">
-                        <span>Tiếp xúc IT</span>
-                        <span>Website trường</span>
-                        <span>vBulletin</span>
                     </div>
                 </article>
                 <!--/ko-->
