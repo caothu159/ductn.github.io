@@ -86,24 +86,9 @@
                     <span>Kĩ năng</span>
                     <span class="translate">Skills</span>
                 </div>
-                <!-- ko foreach: skills -->
-                <!-- ko if: type -->
-                <div class="informations type">
-                    <div class="information">
-                        <!-- ko text: skill --><!-- /ko -->
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <!--/ko-->
-                <!-- ko ifnot: type -->
-                <div class="informations">
-                    <div class="information">
-                        <!-- ko text: skill --><!-- /ko -->
-                        <span class="translate"></span>
-                    </div>
-                </div>
-                <!--/ko-->
-                <!--/ko-->
+                <!-- ko if: isSkills -->
+                <!-- ko component: { name: 'skills'} --><!-- /ko -->
+                <!-- /ko -->
             </div>
         </div>
         <div class="content">

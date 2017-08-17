@@ -14,34 +14,27 @@
     };
 
     require([
-        'knockout'
-    ], function(ko) {
+        'knockout',
+        'scripts/skills'
+    ], function(ko, skills) {
+
+        if (!ko.components.isRegistered('skills')) {
+            ko.components.register('skills', skills);
+        }
 
         var App = function() {
             this.experiences = ko.computed(function() {
                 return app.experiences;
             }, this);
-
-            this.skills = ko.computed(function() {
-                var _skills = [];
-                $.each(app.skills, function(index, skills) {
-                    _skills.push({
-                        skill: index,
-                        type: true,
-                        start: 0
-                    });
-                    $.each(skills, function(index, skill) {
-                        _skills.push({
-                            skill: skill,
-                            type: false,
-                            start: 0
-                        });
-                    });
-                });
-                return _skills;
-            }, this);
         };
-        ko.applyBindings(new App());
+
+        $(function() {
+            ko.applyBindings($.extend(new App(), {
+                isSkills: ko.computed(function() {
+                    return ko.components.isRegistered('skills');
+                }, this)
+            }));
+        });
     });
 
     $.ajax({
@@ -55,20 +48,6 @@
                 return;
             }
             app.experiences = experiences;
-        }
-    });
-
-    $.ajax({
-        method: 'GET',
-        url: 'assets/data/skills.json',
-        cache: false,
-        dataType: 'text',
-        success: function(skills) {
-            skills = JSON.parse(skills);
-            if ($.isEmptyObject(skills)) {
-                return;
-            }
-            app.skills = skills;
         }
     });
 
