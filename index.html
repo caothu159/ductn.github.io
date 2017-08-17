@@ -86,8 +86,9 @@
                     <span>Kĩ năng</span>
                     <span class="translate">Skills</span>
                 </div>
-                <!-- ko if: isSkills -->
-                <!-- ko component: { name: 'skills'} --><!-- /ko -->
+                <!-- ko if: hasSkills -->
+                <!-- ko component: { name: 'skills'} -->
+                <!-- /ko -->
                 <!-- /ko -->
             </div>
         </div>
@@ -109,18 +110,10 @@
                         </div>
                     </article>
                 </script>
-                <!-- ko foreach: experiences -->
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span data-bind="text: time"></span>
-                    </div>
-                    <div class="com" data-bind="text: com"></div>
-                    <div class="job" data-bind="text: job"></div>
-                    <div class="experience">
-                    </div>
-                </article>
-                <!--/ko-->
+                <!-- ko if: hasExperiences -->
+                <!-- ko component: { name: 'experiences'} -->
+                <!-- /ko -->
+                <!-- /ko -->
             </div>
         </div>
     </div>

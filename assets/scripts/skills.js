@@ -8,28 +8,22 @@ define([
         var self = this;
 
         this._skillsLoad = function() {
-            $.ajax({
-                method: 'GET',
-                url: 'assets/data/skills.json',
-                cache: false,
-                dataType: 'text',
-                success: function(resp) {
-                    $.each(JSON.parse(resp), function(type, skills) {
+            $.getJSON('assets/data/skills.json', function(resp) {
+                $.each(resp, function(type, skills) {
+                    self.$skills.push({
+                        skill: type,
+                        type: true,
+                        start: 0
+                    });
+                    $.each(skills, function(index, skill) {
                         self.$skills.push({
-                            skill: type,
-                            type: true,
+                            skill: skill,
+                            type: false,
                             start: 0
                         });
-                        $.each(skills, function(index, skill) {
-                            self.$skills.push({
-                                skill: skill,
-                                type: false,
-                                start: 0
-                            });
-                        });
                     });
+                });
 
-                }
             });
         };
 
