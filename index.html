@@ -235,143 +235,30 @@
                 <span>Education</span>
                 <span>Experience</span>
             </h5>
-            <div class="content-wrapper">
+            <div id="experiences" class="content-wrapper experiences">
+                <script id="article" type="text/html">
+                    <article class="article clearfix">
+                        <div class="time">
+                            <i class="time-icon ion-ios-location"></i>
+                            <span data-bind="text: time"></span>
+                        </div>
+                    </article>
+                </script>
+                <!-- ko foreach: getExperiences() -->
                 <article class="article clearfix">
                     <div class="time">
                         <i class="time-icon ion-ios-location"></i>
-                        <span>2006</span>
+                        <span data-bind="text: time"></span>
                     </div>
-                    <div class="com">THPT Chuyên QB</div>
-                    <div class="job">PHP</div>
+                    <div class="com" data-bind="text: com"></div>
+                    <div class="job" data-bind="text: job"></div>
                     <div class="experience">
                         <span>Tiếp xúc IT</span>
                         <span>Website trường</span>
                         <span>vBulletin</span>
                     </div>
                 </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>2009</span>
-                    </div>
-                    <div class="com">Bách Khoa Hà Nội</div>
-                    <div class="job">Quản lý</div>
-                    <div class="experience">
-                        <span>Quản trị kinh doanh</span>
-                        <span>Kế Toán</span>
-                        <span>Chứng khoán</span>
-                        <span>Nhân sự</span>
-                    </div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>1010</span>
-                    </div>
-                    <div class="com">Aptech Arena</div>
-                    <div class="job">It</div>
-                    <div class="experience">
-                        <span>Các ngôn ngữ căn bản</span>
-                        <span>Làm việc nhóm</span>
-                    </div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>2011</span>
-                    </div>
-                    <div class="com">VietSoftware</div>
-                    <div class="job">PHP developer</div>
-                    <div class="experience">
-                        <span>Centos</span>
-                        <span>Drupal</span>
-                        <span>Mail server</span>
-                    </div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>2013</span>
-                    </div>
-                    <div class="com">Home Land</div>
-                    <div class="job">It</div>
-                    <div class="experience">
-                        <span>Web bất động sản</span>
-                        <span>Web bán hàng</span>
-                        <span>Bootstrap</span>
-                    </div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>2014</span>
-                    </div>
-                    <div class="com"></div>
-                    <div class="job">Java</div>
-                    <div class="experience"></div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>2/2015</span>
-                    </div>
-                    <div class="com"></div>
-                    <div class="job">.Net, ASP</div>
-                    <div class="experience"></div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>5/2015</span>
-                    </div>
-                    <div class="com"></div>
-                    <div class="job">Angular</div>
-                    <div class="experience"></div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>9/2015</span>
-                    </div>
-                    <div class="com"></div>
-                    <div class="job">Nodejs</div>
-                    <div class="experience"></div>
-                </article>
-                <article class="article clearfix">
-                    <div class="time">
-                        <i class="time-icon ion-ios-location"></i>
-                        <span>2017</span>
-                    </div>
-                    <div class="com">
-                        <span>GSS</span>
-                        <span>TwentyCi Viet Nam</span>
-                    </div>
-                    <div class="job">
-                        <span>Ubuntu server</span>
-                    </div>
-                    <div class="experience"></div>
-                    <div class="job">
-                        <span>WordPress</span>
-                    </div>
-                    <div class="experience">
-                        <span>viewmychain.com</span>
-                    </div>
-                    <div class="job">
-                        <span>Magento 1x, 2x</span>
-                    </div>
-                    <div class="experience">
-                        <span>shrimps.co.uk</span>
-                        <span>thealphabetgiftshop.co.uk</span>
-                        <span>penelopechilvers.com</span>
-                        <span>wildandgorgeous.co.uk</span>
-                        <span>fivedollarshake.com</span>
-                        <span>amaiakids.co.uk</span>
-                        <span>gerbing.co.uk</span>
-                        <span>lacoquetakids.com</span>
-                        <span>thebigorangebox.co.uk</span>
-                        <span>neroebianco.uk</span>
-                    </div>
-                </article>
+                <!--/ko-->
             </div>
         </div>
     </div>

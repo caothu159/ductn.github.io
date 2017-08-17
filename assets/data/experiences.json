@@ -1,0 +1,100 @@
+[
+{
+    "time": "2006",
+    "com": "THPT Chuyên QB",
+    "job": "PHP",
+    "experience": [
+        "Tiếp xúc IT",
+        "Website trường",
+        "vBulletin"
+    ]
+},
+{
+    "time": "2009",
+    "com": "Bách Khoa Hà Nội",
+    "job": "Quản lý",
+    "experience": [
+        "Quản trị kinh doanh",
+        "Kế Toán",
+        "Chứng khoán",
+        "Nhân sự"
+    ]
+},
+{
+    "time": "1010",
+    "com": "Aptech Arena",
+    "job": "It",
+    "experience": [
+        "Các ngôn ngữ căn bản",
+        "Làm việc nhóm"
+    ]
+},
+{
+    "time": "2011",
+    "com": "VietSoftware",
+    "job": "PHP developer",
+    "experience": [
+        "Centos",
+        "Drupal",
+        "Mail server"
+    ]
+},
+{
+    "time": "2013",
+    "com": "Home Land",
+    "job": "It",
+    "experience": [
+        "Web bất động sản",
+        "Web bán hàng",
+        "Bootstrap"
+    ]
+},
+{
+    "time": "2014",
+    "com": "",
+    "job": "Java",
+    "experience": ""
+},
+{
+    "time": "2/2015",
+    "com": "",
+    "job": ".Net, ASP",
+    "experience": ""
+},
+{
+    "time": "5/2015",
+    "com": "",
+    "job": "Angular",
+    "experience": ""
+},
+{
+    "time": "9/2015",
+    "com": "",
+    "job": "Nodejs",
+    "experience": ""
+},
+{
+    "time": "2017",
+    "com": [
+        "GSS",
+        "TwentyCi Viet Nam"
+    ],
+    "job": [
+        "Ubuntu server",
+        "WordPress",
+        "Magento 1x, 2x"
+    ],
+    "experience": [
+        "viewmychain.com",
+        "shrimps.co.uk",
+        "thealphabetgiftshop.co.uk",
+        "penelopechilvers.com",
+        "wildandgorgeous.co.uk",
+        "fivedollarshake.com",
+        "amaiakids.co.uk",
+        "gerbing.co.uk",
+        "lacoquetakids.com",
+        "thebigorangebox.co.uk",
+        "neroebianco.uk"
+    ]
+}]
