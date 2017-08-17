@@ -1,10 +1,6 @@
 <!-- ko foreach: $experiences -->
 <article class="article clearfix">
-    <div class="time">
-        <i class="time-icon ion-ios-location"></i>
-        <!-- ko text: time -->
-        <!-- /ko -->
-    </div>
+    <span class="time" data-bind="text: time"></span>
     <div class="com" data-bind="text: com"></div>
     <div class="job" data-bind="text: job"></div>
     <div class="experience">

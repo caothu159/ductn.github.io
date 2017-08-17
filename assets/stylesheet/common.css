@@ -27,8 +27,8 @@ html {
 }
 
 body {
-    background: #222222;
-    color: #efefef;
+    background: #ffffff;
+    color: #333333;
     display: none;
     font-family: 'Open Sans', sans-serif;
     height: auto;
@@ -42,32 +42,49 @@ body {
     font-weight: 600;
 }
 
+
 .sidebar {
-    background: rgba(7, 71, 166, 0.3);
-    border-radius: 25px;
+    background: #333333;
+    color: #ffffff;
     display: block;
     float: left;
-    height: calc(100vh - 40px);
-    margin: 20px 30px 20px 20px;
-    padding: 30px 10px 0px;
+    height: 100vh;
+    margin-left: 40px;
+    padding: 0px;
+    position: relative;
     width: 300px;
 }
 
-.sidebar h1 {
-    color: rgba(60, 192, 196, 1);
+.sidebar .personal.name {
+    background: #ffffff;
+    color: #000000;
     display: block;
+    font-size: 60px;
+    left: 0px;
+    line-height: 120px;
+    height: 120px;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50px;
+    width: auto;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.sidebar .personal.job {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 50px;
     margin: 0px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.sidebar h4 {
-    display: block;
-    font-weight: 400;
-    margin: 0px;
-    text-align: center;
-    text-transform: capitalize;
+.sidebar .sidebar-wrapper {
+    margin-top: 120px;
 }
 
 .sidebar .title {
@@ -103,7 +120,7 @@ body {
     float: right;
     height: 100vh;
     overflow: hidden;
-    padding: 10px;
+    padding: 170px 80px 0 40px;
     width: calc(100% - 350px);
 }
 
@@ -135,9 +152,7 @@ body {
 }
 
 .content-wrapper {
-    border: 1px solid rgba(7, 71, 166, 1);
-    border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .article {
@@ -164,17 +179,6 @@ body {
 
 .article + .article .time {
     border-top: 1px solid rgba(60, 192, 196, 0.3);
-}
-
-.article .time-icon {
-    background: #222222;
-    color: rgba(7, 71, 166, 1);
-    display: block;
-    font-size: 20px;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    transform: translate(-43px, 0px) rotate(-90deg);
 }
 
 .article .com {
