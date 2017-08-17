@@ -60,17 +60,12 @@ body {
     color: #000000;
     display: block;
     font-size: 60px;
-    left: 0px;
     line-height: 120px;
     height: 120px;
-    margin: 0px;
-    position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 50px;
     width: auto;
     white-space: nowrap;
-    z-index: 1;
 }
 
 .sidebar .personal.job {
@@ -84,7 +79,6 @@ body {
 }
 
 .sidebar .sidebar-wrapper {
-    margin-top: 120px;
 }
 
 .sidebar .title {
