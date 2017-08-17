@@ -10,32 +10,28 @@
 
     require([
         'knockout',
-        'scripts/skills',
-        'scripts/experiences'
+        'scripts/components/skills',
+        'scripts/components/experiences'
     ], function(ko, skills, experiences) {
 
-        if (!ko.components.isRegistered('skills')) {
-            ko.components.register('skills', skills);
-        }
+        var App = function() {
 
-        if (!ko.components.isRegistered('experiences')) {
-            ko.components.register('experiences', experiences);
-        }
+            this.hasSkills = ko.computed(function() {
+                if (!ko.components.isRegistered('skills')) {
+                    ko.components.register('skills', skills);
+                }
+                return ko.components.isRegistered('skills');
+            }, this);
 
-        $(function() {
-            var App = function() {
+            this.hasExperiences = ko.computed(function() {
+                if (!ko.components.isRegistered('experiences')) {
+                    ko.components.register('experiences', experiences);
+                }
+                return ko.components.isRegistered('experiences');
+            }, this);
+        };
 
-                this.hasSkills = ko.computed(function() {
-                    return ko.components.isRegistered('skills');
-                }, this);
-
-                this.hasExperiences = ko.computed(function() {
-                    return ko.components.isRegistered('experiences');
-                }, this);
-            };
-
-            ko.applyBindings(new App());
-        });
+        ko.applyBindings(new App());
     });
 
     $(function() {

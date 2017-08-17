@@ -3,6 +3,7 @@ define([
     'knockout',
     'text!templates/experiences.html'
 ], function($, ko, template) {
+    "use strict";
 
     var Experiences = function() {
         var self = this;
