@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Jura|Open+Sans&subset=vietnamese');
 @import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 @-ms-viewport {
@@ -44,10 +44,12 @@ body {
 
 .title {
     display: block;
+    font-family: 'Jura', sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 50px;
-    margin: 20px 0px 15px;
+    margin-bottom: 10px;
+    margin-top: 15px;
     text-transform: uppercase;
 }
 
@@ -59,18 +61,19 @@ body {
     float: left;
     height: 100vh;
     margin-left: 40px;
-    padding: 0px;
     position: relative;
-    width: 300px;
+    width: 350px;
 }
 
 .sidebar .personal.name {
     background: #ffffff;
     color: #000000;
     display: block;
+    font-family: 'Jura', sans-serif;
     font-size: 60px;
-    height: 120px;
-    line-height: 120px;
+    height: 100px;
+    letter-spacing: 5px;
+    line-height: 100px;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -79,6 +82,7 @@ body {
 
 .sidebar .personal.job {
     display: block;
+    font-family: 'Jura', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 50px;
@@ -88,20 +92,34 @@ body {
 }
 
 .sidebar .sidebar-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .sidebar .informations {
     display: block;
-    font-size: 14px;
-    text-indent: 5px;
+    font-size: 13px;
+    position: relative;
+}
+
+.sidebar .personal {
+    display: block;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.sidebar .icon {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    right: calc(100% + 10px);
 }
 
 .sidebar .type {
-    font-weight: 600;
-}
-
-.sidebar .type ~ .informations:not(.type) {
-    text-indent: 25px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .content {
@@ -110,7 +128,7 @@ body {
     height: 100vh;
     overflow: hidden;
     padding: 170px 80px 0px 40px;
-    width: calc(100% - 350px);
+    width: calc(100% - 390px);
 }
 
 .content-wrapper {
