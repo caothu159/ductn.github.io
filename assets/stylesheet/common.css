@@ -42,6 +42,15 @@ body {
     font-weight: 600;
 }
 
+.title {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 20px 0px 15px;
+    text-transform: uppercase;
+}
+
 
 .sidebar {
     background: #333333;
@@ -60,12 +69,12 @@ body {
     color: #000000;
     display: block;
     font-size: 60px;
-    line-height: 120px;
     height: 120px;
+    line-height: 120px;
     text-align: center;
     text-transform: uppercase;
-    width: auto;
     white-space: nowrap;
+    width: auto;
 }
 
 .sidebar .personal.job {
@@ -79,20 +88,6 @@ body {
 }
 
 .sidebar .sidebar-wrapper {
-}
-
-.sidebar .title {
-    color: rgba(60, 192, 196, 1);
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 20px 0px 10px;
-}
-
-.sidebar .translate {
-    font-size: 10px;
-    font-style: italic;
-    font-weight: 400;
 }
 
 .sidebar .informations {
@@ -114,35 +109,8 @@ body {
     float: right;
     height: 100vh;
     overflow: hidden;
-    padding: 170px 80px 0 40px;
+    padding: 170px 80px 0px 40px;
     width: calc(100% - 350px);
-}
-
-.content h2 {
-    color: rgba(60, 192, 196, 1);
-    display: block;
-    font-weight: 400;
-    line-height: 50px;
-    margin: 0px;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.content h2 span + span:before {
-    content: '/ ';
-}
-
-.content h5 {
-    display: block;
-    font-style: italic;
-    font-weight: 400;
-    margin: 0px;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.content h5 span + span:before {
-    content: '/ ';
 }
 
 .content-wrapper {
