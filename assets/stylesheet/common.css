@@ -145,14 +145,16 @@ body {
 
 .article .time {
     clear: right;
-    color: rgba(60, 192, 196, 1);
+    color: #000000;
     display: block;
     float: left;
     font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
     line-height: 30px;
     position: relative;
     text-align: left;
-    width: 50px;
+    width: 120px;
 }
 
 .article + .article .time {
@@ -162,11 +164,12 @@ body {
 .article .com {
     display: block;
     float: left;
+    font-family: 'Jura', sans-serif;
     font-size: 11px;
     letter-spacing: 0.3px;
     line-height: 30px;
     text-transform: uppercase;
-    width: calc(100% - 50px);
+    width: calc(100% - 140px);
 }
 
 .article + .article .com {
