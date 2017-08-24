@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jura|Open+Sans&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Jura&subset=vietnamese');
 @import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 @-ms-viewport {
@@ -22,6 +22,7 @@
 }
 
 html {
+    display: block;
     margin: 0px;
     padding: 0px;
 }
@@ -29,8 +30,7 @@ html {
 body {
     background: #ffffff;
     color: #333333;
-    display: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Jura', sans-serif;
     height: auto;
     margin: 0px;
     overflow: hidden;
@@ -44,34 +44,36 @@ body {
 
 .title {
     display: block;
-    font-family: 'Jura', sans-serif;
-    font-size: 30px;
+    font-size: 2.3vh;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 5vh;
     text-transform: uppercase;
 }
 
 
 .sidebar {
-    background: #333333;
     color: #ffffff;
     display: block;
     float: left;
     height: 100vh;
-    margin-left: 40px;
+    margin-left: 3vw;
     position: relative;
-    width: 350px;
+    width: 33vw;
+}
+
+.sidebar > .personal {
+    display: block;
+    width: 94vw;
 }
 
 .sidebar .personal.name {
     background: #ffffff;
     color: #000000;
     display: block;
-    font-family: 'Jura', sans-serif;
-    font-size: 60px;
-    height: 100px;
+    font-size: 6vw;
+    font-weight: 600;
     letter-spacing: 5px;
-    line-height: 100px;
+    line-height: 8.5vh;
     margin-top: 0px;
     text-align: center;
     text-transform: uppercase;
@@ -80,53 +82,94 @@ body {
 }
 
 .sidebar .personal.job {
+    background-color: #333333;
     display: block;
-    font-family: 'Jura', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 50px;
+    font-size: 2vh;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 4.5vh;
     margin-top: 0px;
     text-align: center;
     text-transform: uppercase;
+    width: 33vw;
 }
 
-.sidebar .sidebar-wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
+.sidebar .personal.info {
+    line-height: 2vh;
+    padding-left: 3vw;
 }
 
-.sidebar .informations {
+.sidebar .personal.info .personal {
     display: block;
-    font-size: 13px;
+    font-size: 1.4vh;
+    margin-top: 1.2vh;
     position: relative;
 }
 
-.sidebar .personal {
+.sidebar .personal span {
     display: block;
-    line-height: 30px;
-    margin-top: 10px;
 }
 
-.sidebar .icon {
+.sidebar .personal .icon {
     display: block;
-    font-size: 25px;
+    font-size: 2.3vh;
+    height: 2.5vh;
+    left: -3vw;
+    line-height: 2.5vh;
     position: absolute;
-    right: calc(100% + 10px);
+    top: 1vh;
+    width: 2.5vh;
+}
+
+.sidebar .sidebar-wrapper {
+    background-color: #333333;
+    display: block;
+    height: 87vh;
+    padding-left: 3vw;
+}
+
+.sidebar .informations:not(.type) {
+    display: block;
+    font-size: 1.4vh;
+    line-height: 1.8vh;
+    position: relative;
+}
+
+.sidebar .title {
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebar .title + .informations:not(.type) {
+    margin-top: 1vh;
+}
+
+.sidebar .informations .title {
+    margin-top: 2vh;
 }
 
 .sidebar .type {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 2vh;
+    line-height: 3vh;
+    margin-top: 1vh;
     text-transform: uppercase;
+}
+
+.sidebar .type ~ .informations:not(.type) {
+    font-size: 1.1vh;
+    line-height: 1.2vh;
 }
 
 .content {
     display: block;
     float: right;
     height: 100vh;
+    margin: 17vh 3vw 0px;
     overflow: hidden;
-    padding: 170px 80px 0px 40px;
-    width: calc(100% - 390px);
+    width: 58vw;
+}
+
+.content .title {
+    border-bottom: 1px solid #333333;
 }
 
 .content-wrapper {
@@ -135,12 +178,10 @@ body {
 
 .article {
     display: block;
-    padding-left: 40px;
-    padding-right: 15px;
 }
 
 .article + .article {
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 .article .time {
@@ -148,43 +189,34 @@ body {
     color: #000000;
     display: block;
     float: left;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 300;
     letter-spacing: 1px;
     line-height: 30px;
     position: relative;
     text-align: left;
-    width: 120px;
-}
-
-.article + .article .time {
-    border-top: 1px solid rgba(60, 192, 196, 0.3);
+    text-transform: uppercase;
+    width: 130px;
 }
 
 .article .com {
     display: block;
-    float: left;
-    font-family: 'Jura', sans-serif;
-    font-size: 11px;
+    float: right;
+    font-size: 14px;
     letter-spacing: 0.3px;
     line-height: 30px;
     text-transform: uppercase;
     width: calc(100% - 140px);
 }
 
-.article + .article .com {
-    border-top: 1px solid rgba(60, 192, 196, 0.3);
-}
-
 .article .job {
     clear: left;
-    color: rgba(60, 192, 196, 1);
     display: block;
-    float: left;
+    float: right;
     font-size: 14px;
     line-height: 20px;
-    text-transform: uppercase;
-    width: 170px;
+    text-transform: capitalize;
+    width: calc(100% - 140px);
 }
 
 .article .experience {
@@ -192,9 +224,11 @@ body {
     display: block;
     float: right;
     font-size: 13px;
-    width: calc(100% - 170px);
+    width: calc(100% - 140px);
 }
 
 .article .experience span {
     display: block;
+    float: left;
+    min-width: 50%;
 }

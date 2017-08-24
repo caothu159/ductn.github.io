@@ -34,8 +34,4 @@
         ko.applyBindings(new App());
     });
 
-    $(function() {
-        $(document.body).show();
-    });
-
 }));

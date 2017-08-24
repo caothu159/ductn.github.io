@@ -1,36 +1,6 @@
 [
 {
-    "time": "2006",
-    "com": "THPT Chuyên QB",
-    "job": "PHP",
-    "experience": [
-        "Tiếp xúc IT",
-        "Website trường",
-        "vBulletin"
-    ]
-},
-{
-    "time": "2009",
-    "com": "Bách Khoa Hà Nội",
-    "job": "Quản lý",
-    "experience": [
-        "Quản trị kinh doanh",
-        "Kế Toán",
-        "Chứng khoán",
-        "Nhân sự"
-    ]
-},
-{
-    "time": "2010",
-    "com": "Aptech Arena",
-    "job": "It",
-    "experience": [
-        "Các ngôn ngữ căn bản",
-        "Làm việc nhóm"
-    ]
-},
-{
-    "time": "2011",
+    "time": "9/2011",
     "com": "VietSoftware",
     "job": "PHP developer",
     "experience": [
@@ -40,9 +10,9 @@
     ]
 },
 {
-    "time": "2013",
+    "time": "6/2013",
     "com": "Home Land",
-    "job": "It",
+    "job": "Java",
     "experience": [
         "Web bất động sản",
         "Web bán hàng",
@@ -50,7 +20,7 @@
     ]
 },
 {
-    "time": "2014",
+    "time": "9/2014",
     "com": "",
     "job": "Java",
     "experience": ""

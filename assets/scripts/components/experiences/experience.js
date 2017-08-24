@@ -14,7 +14,7 @@ define([
             $date.setMonth(str.pop());
         }
         $date.toString = function() {
-            return this.toLocaleDateString('en-US', { year: 'numeric', month: 'long'});
+            return this.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
         };
         return $date;
     }
@@ -22,9 +22,13 @@ define([
     var Experience = function Experience($experience) {
         var self = this;
 
+        if (!$.isArray($experience.job)) {
+            $experience.job = [$experience.job];
+        }
+
         this.time = _prepareDate($experience.time);
         this.com = ko.observable($experience.com);
-        this.job = ko.observable($experience.job);
+        this.job = ko.observableArray($experience.job);
         this.experience = ko.observableArray($experience.experience);
     };
 
