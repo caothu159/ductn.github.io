@@ -10,7 +10,11 @@
 
     require([
         'angularjs',
+        /**
+         * base app
+         */
         'angular/source/app',
+        'angular/source/modules',
     ], function(angular, angularApp) {
 
         $(function() {
