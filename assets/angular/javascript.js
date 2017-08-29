@@ -15,10 +15,14 @@
          */
         'angular/source/app',
         'angular/source/modules',
-    ], function(angular, angularApp) {
+        /**
+         * controllers
+         */
+        'angular/source/controllers/task',
+    ], function(ng, angularApp) {
 
         $(function() {
-            angular.bootstrap(document, ['angularApp']);
+            ng.bootstrap(document, ['angularApp']);
         });
 
         return angularApp;

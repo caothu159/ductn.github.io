@@ -2,6 +2,7 @@ define([
     'jquery',
     'angularjs',
 ], function($) {
+    'use strict';
 
     window.angularApp = {
         Configs: {},

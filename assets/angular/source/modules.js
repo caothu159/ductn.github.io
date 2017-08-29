@@ -5,7 +5,9 @@ define([
      * configurations
      */
     'angular/source/app',
-], function($, angular, angularApp) {
-    angularApp.Modules = angular.module('angularApp', []);
+], function($, ng, angularApp) {
+    'use strict';
+
+    angularApp.Modules = ng.module('angularApp', []);
     return angularApp;
 });
