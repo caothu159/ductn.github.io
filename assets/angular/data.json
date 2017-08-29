@@ -1,0 +1,106 @@
+[
+{
+    "IDCategory": "1",
+    "NameCategory": "Category 1",
+    "Task": [
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    },
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    },
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    }]
+},
+{
+    "IDCategory": "2",
+    "NameCategory": "Category 2",
+    "Task": [
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    },
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    },
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    }]
+}
+{
+    "IDCategory": "3",
+    "NameCategory": "Category 3",
+    "Task": [
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    },
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    },
+    {
+        "TaskName": "TaskName data",
+        "TaskType": "TaskType data",
+        "TaskCategory": "1",
+        "TaskTimeline": "TaskTimeline data",
+        "NewBuild": "1",
+        "AffiliateLink": "AffiliateLink data",
+        "HelpText": "HelpText data",
+        "Active": "1"
+    }]
+}]

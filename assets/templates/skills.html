@@ -1,7 +1,14 @@
 <!-- ko foreach: $skills -->
 <div class="informations" data-bind="css: {'type': type}">
     <div class="information">
+        <!-- ko ifnot: link -->
         <!-- ko text: skill --><!-- /ko -->
+        <!-- /ko -->
+        <!-- ko if: link -->
+        <a data-bind="attr: { href: link, title: skill }">
+        	<!-- ko text: skill --><!-- /ko -->
+        </a>
+        <!-- /ko -->
     </div>
 </div>
 <!--/ko-->

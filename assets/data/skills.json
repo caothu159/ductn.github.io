@@ -8,15 +8,17 @@
         "vBulletin"
     ],
 
-    "Javascript": [
-        "ES6",
-        "Angular 1,2",
-        "jQuery",
-        "jQuery UI",
-        "Requirejs",
-        "Nodejs",
-        "StyleSheet"
-    ],
+    "Javascript":
+    {
+        "ES6": "",
+        "Angular 1,2": "angular.html",
+        "Knockout": "knockout.html",
+        "jQuery": "",
+        "jQuery UI": "",
+        "Requirejs": "",
+        "Nodejs": "",
+        "StyleSheet": ""
+    },
 
     "StyleSheet": [
         "CSS3",

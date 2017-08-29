@@ -14,13 +14,15 @@ define([
                     self.$skills.push({
                         skill: type,
                         type: true,
-                        start: 0
+                        start: 0,
+                        link: false
                     });
                     $.each(skills, function(index, skill) {
                         self.$skills.push({
-                            skill: skill,
+                            skill: ($.type(index) === "string") ? index : skill,
                             type: false,
-                            start: 0
+                            start: 0,
+                            link: ($.type(index) === "string") ? skill : false
                         });
                     });
                 });
