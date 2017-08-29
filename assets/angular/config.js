@@ -18,6 +18,8 @@ requirejs.config({
             exports: 'angular',
             deps: [
                 'jquery',
+                'jqueryUi',
+                'jqueryMigrate',
             ],
         },
         themeJavascript: {
