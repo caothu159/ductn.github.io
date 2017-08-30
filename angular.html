@@ -18,41 +18,46 @@
 </head>
 
 <body class="clearfix">
-    <div class="container" data-ng-controller="TaskController">
-        <div class="card" data-ng-repeat="task in tasks" style="margin-top: 30px;">
-            <div class="card-header">
-                <span data-ng-bind="task.NameCategory"></span>
-                <a href="#" class="btn btn-primary float-right">add</a>
+    <div class="container-fluid" data-ng-controller="TaskController">
+        <div class="row">
+            <div class="col-8">
+                <div class="card" data-ng-repeat="task in tasks" style="margin-top: 30px;">
+                    <div class="card-header">
+                        <span data-ng-bind="task.NameCategory"></span>
+                        <a href="#" class="btn btn-primary float-right">add</a>
+                    </div>
+                    <table class="card-body table table-hover table-sm table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>TaskName</th>
+                                <th>TaskType</th>
+                                <th>TaskCategory</th>
+                                <th>TaskTimeline</th>
+                                <th>NewBuild</th>
+                                <th>AffiliateLink</th>
+                                <th>HelpText</th>
+                                <th>Active</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="item in task.Task track by $index">
+                                <th scope="row" data-ng-bind="$index + 1">1</th>
+                                <td data-ng-bind="item.TaskName"></td>
+                                <td data-ng-bind="item.TaskType"></td>
+                                <td data-ng-bind="item.TaskCategory"></td>
+                                <td data-ng-bind="item.TaskTimeline"></td>
+                                <td data-ng-bind="item.NewBuild"></td>
+                                <td data-ng-bind="item.AffiliateLink"></td>
+                                <td data-ng-bind="item.HelpText"></td>
+                                <td data-ng-bind="item.Active"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="card-body">
-                <table class="table table-hover table-sm table-striped">
-                    <thead>
-                        <tr>
-                            <th>#</th >
-                            <th>TaskName</th>
-                            <th>TaskType</th>
-                            <th>TaskCategory</th>
-                            <th>TaskTimeline</th>
-                            <th>NewBuild</th>
-                            <th>AffiliateLink</th>
-                            <th>HelpText</th>
-                            <th>Active</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr data-ng-repeat="item in task.Task track by $index">
-                            <th scope="row" data-ng-bind="$index + 1">1</th>
-                            <td data-ng-bind="item.TaskName"></td>
-                            <td data-ng-bind="item.TaskType"></td>
-                            <td data-ng-bind="item.TaskCategory"></td>
-                            <td data-ng-bind="item.TaskTimeline"></td>
-                            <td data-ng-bind="item.NewBuild"></td>
-                            <td data-ng-bind="item.AffiliateLink"></td>
-                            <td data-ng-bind="item.HelpText"></td>
-                            <td data-ng-bind="item.Active"></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-4">
+                <pre style="font-size: 11px;">{{tasksJson()}}</pre>
             </div>
         </div>
     </div>

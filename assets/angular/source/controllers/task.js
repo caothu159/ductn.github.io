@@ -25,6 +25,10 @@ define([
         this.$scope.ready = false;
         var self = this;
 
+        this.$scope.tasksJson = function(){
+            return JSON.stringify(self.$scope.tasks, null, 2);
+        };
+
         this.$document.ready(function() {
             self.$scope.$apply(function() {
                 self.$scope.ready = true;
