@@ -21,6 +21,7 @@
     <div class="container-fluid" data-ng-controller="TaskController">
         <div class="row">
             <div class="col-8">
+                <!-- task -->
                 <div class="card" data-ng-repeat="task in tasks" style="margin-top: 30px;">
                     <div class="card-header">
                         <span data-ng-bind="task.NameCategory"></span>
@@ -38,10 +39,12 @@
                                 <th>AffiliateLink</th>
                                 <th>HelpText</th>
                                 <th>Active</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr data-ng-repeat="item in task.Task track by $index">
+                            <!-- item -->
+                            <tr data-ng-repeat="item in task.Task">
                                 <th scope="row" data-ng-bind="$index + 1">1</th>
                                 <td data-ng-bind="item.TaskName"></td>
                                 <td data-ng-bind="item.TaskType"></td>
@@ -51,6 +54,9 @@
                                 <td data-ng-bind="item.AffiliateLink"></td>
                                 <td data-ng-bind="item.HelpText"></td>
                                 <td data-ng-bind="item.Active"></td>
+                                <td class="text-right">
+                                    <span style="display: block; color: red; cursor: pointer;" data-ng-click="task.remove(item)">x</span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

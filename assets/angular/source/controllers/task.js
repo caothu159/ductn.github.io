@@ -25,7 +25,7 @@ define([
         this.$scope.ready = false;
         var self = this;
 
-        this.$scope.tasksJson = function(){
+        this.$scope.tasksJson = function() {
             return JSON.stringify(self.$scope.tasks, null, 2);
         };
 
@@ -67,9 +67,61 @@ define([
 
             $.getJSON('assets/angular/data.json', function(resp) {
                 self.$scope.$apply(function() {
-                    self.$scope.tasks = resp;
+                    self.$scope.tasks = [];
+                    ng.forEach(resp, function($category, index) {
+                        self.$scope.tasks.push(new TaskCategory($category));
+                    });
                 });
             });
+        };
+
+        /**
+         * TaskCategory
+         */
+        var TaskCategory = function TaskCategory($category) {
+            this._init = function _init($category) {
+                this.IDCategory = $category.IDCategory;
+                this.NameCategory = $category.NameCategory;
+                this.Task = this._initTask($category.Task);
+            };
+
+            var self = this;
+
+            this._initTask = function _initTask($tasks) {
+                var _tasks = [];
+                ng.forEach($tasks, function($task, index) {
+                    _tasks.push(new Task($task));
+                });
+                return _tasks;
+            };
+
+            this.remove = function remove($task) {
+                _index = self.Task.indexOf($task);
+                delete self.Task[self.Task.indexOf($task)];
+                self.Task.splice(_index, 1);
+            };
+
+            this._init($category);
+        };
+
+        /**
+         * Task
+         */
+        var Task = function Task($task) {
+            this._init = function _init($task) {
+                this.TaskName = $task.TaskName;
+                this.TaskType = $task.TaskType;
+                this.TaskCategory = $task.TaskCategory;
+                this.TaskTimeline = $task.TaskTimeline;
+                this.NewBuild = $task.NewBuild;
+                this.AffiliateLink = $task.AffiliateLink;
+                this.HelpText = $task.HelpText;
+                this.Active = $task.Active;
+            };
+
+            var self = this;
+
+            this._init($task);
         };
     }
 
