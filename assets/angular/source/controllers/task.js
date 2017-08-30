@@ -101,6 +101,10 @@ define([
                 self.Task.splice(_index, 1);
             };
 
+            this.add = function add($task) {
+                self.Task.push(new Task($task));
+            };
+
             this._init($category);
         };
 

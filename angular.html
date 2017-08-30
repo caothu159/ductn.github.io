@@ -20,12 +20,11 @@
 <body class="clearfix">
     <div class="container-fluid" data-ng-controller="TaskController">
         <div class="row">
-            <div class="col-8">
+            <div class="col-9">
                 <!-- task -->
                 <div class="card" data-ng-repeat="task in tasks" style="margin-top: 30px;">
                     <div class="card-header">
-                        <span data-ng-bind="task.NameCategory"></span>
-                        <a href="#" class="btn btn-primary float-right">add</a>
+                        #<strong data-ng-bind="task.IDCategory"></strong> | <span data-ng-bind="task.NameCategory"></span>
                     </div>
                     <table class="card-body table table-hover table-sm table-striped">
                         <thead>
@@ -55,14 +54,45 @@
                                 <td data-ng-bind="item.HelpText"></td>
                                 <td data-ng-bind="item.Active"></td>
                                 <td class="text-right">
-                                    <span style="display: block; color: red; cursor: pointer;" data-ng-click="task.remove(item)">x</span>
+                                    <button type="button" class="btn btn-danger btn-sm" data-ng-click="task.remove(item)">delete</button>
+                                </td>
+                            </tr>
+                            <!-- add item -->
+                            <tr data-ng-model="newItem">
+                                <th scope="row"></th>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.TaskName" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.TaskType" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.TaskCategory" disabled data-ng-value="task.IDCategory" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.TaskTimeline" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.NewBuild" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.AffiliateLink" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.HelpText" />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm" data-ng-model="newItem.Active" />
+                                </td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-primary btn-sm" data-ng-click="task.add(newItem); newItem = null">add</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <pre style="font-size: 11px;">{{tasksJson()}}</pre>
             </div>
         </div>
