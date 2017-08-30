@@ -21,7 +21,7 @@
         'angular/source/controllers/task',
     ], function(ng, angularApp) {
 
-        $(function() {
+        ng.element(function() {
             ng.bootstrap(document, ['angularApp']);
         });
 
